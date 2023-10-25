@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="navbar absolute bg-base-100 w-screen">
+    <div className="navbar absolute bg-base-100 w-screen ">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -25,9 +25,9 @@ export default function Navbar() {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-            {/* <li>
-              <a>Explore</a>
-            </li> */}
+            <li>
+              <Link href="explore">Explore</Link>
+            </li>
             <li>
               <a>Create</a>
             </li>
@@ -39,16 +39,16 @@ export default function Navbar() {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          {/* <li>
-            <a>Explore</a>
-          </li> */}
+          <li>
+            <Link href="explore">Explore</Link>
+          </li>
           <li>
             <a>Create</a>
           </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn btn-sm border-0 border-x-2 border-neutral bg-white rounded-none hover:bg-white hover:invert">
+        <a className="btn btn-sm border-0 border-x-2 border-neutral bg-white rounded-none hover:bg-white hover:invert normal-case">
           login
         </a>
       </div>

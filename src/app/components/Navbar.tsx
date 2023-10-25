@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <div className="navbar absolute bg-base-100 w-screen">
@@ -23,21 +25,23 @@ export default function Navbar() {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li>
+            {/* <li>
               <a>Explore</a>
-            </li>
+            </li> */}
             <li>
               <a>Create</a>
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">Best blog</a>
+        <Link href="/" className="btn btn-ghost normal-case text-xl">
+          Best blog
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li>
+          {/* <li>
             <a>Explore</a>
-          </li>
+          </li> */}
           <li>
             <a>Create</a>
           </li>

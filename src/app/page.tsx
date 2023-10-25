@@ -14,7 +14,7 @@ export default function Home() {
           <br />|
         </div>
       </main>
-      <div className="h-screen w-screen flex flex-col gap-3 px-8">
+      <div className="h-screen w-screen flex flex-col gap-3 px-8 mb-10">
         <Card />
         <Card />
         <Card />

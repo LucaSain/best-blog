@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Card() {
   return (
     <div className="h-max w-full p-2 border-b-2 border-neutral flex flex-row items-center">
@@ -5,7 +6,10 @@ export default function Card() {
         <div className="text-4xl font-semibold">
           Blog title{" "}
           <span className="text-lg font-light">
-            by <a className="underline cursor-pointer">gagiu </a>
+            by{" "}
+            <Link href={"/" + "gagiu"} className="underline cursor-pointer">
+              gagiu{" "}
+            </Link>
           </span>
         </div>
         <div className="text-lg mt-2">Descriptiosdjkjsdasjkdnajks</div>

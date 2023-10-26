@@ -1,5 +1,5 @@
 import Card from "./components/Card";
-
+import { posts } from "./explore/page";
 export default function Home() {
   return (
     <>
@@ -14,15 +14,12 @@ export default function Home() {
           <br />|
         </div>
       </main>
-      <div className="h-screen w-screen flex flex-col gap-3 px-8 mb-10">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+      <div className="h-max w-screen flex flex-col gap-3 px-8 mb-10">
+        {posts.map((post) => {
+          return (
+            <Card title={post.title} author={post.author} desc={post.desc} />
+          );
+        })}
       </div>
     </>
   );

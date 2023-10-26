@@ -4,3 +4,8 @@ export interface Post {
   text: string;
   author: string;
 }
+export interface CardProps {
+  title: string;
+  author: string;
+  desc: string;
+}
